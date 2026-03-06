@@ -20,6 +20,6 @@ if (isset($_POST['update'])) {
 mysqli_query($conn, "UPDATE students SET 
 name='$_POST[name]', email='$_POST[email]', course='$_POST[course]', age='$_POST[age]' 
 WHERE id=$id");
-header("Location:view_students.php");
+header("Location:view_student.php");
 }
 ?>
